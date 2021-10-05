@@ -69,13 +69,13 @@ open class BaseViewController<V>: UIViewController {
         self.viewModel = viewModel
     }
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         prepareViewControllerSetup()
     }
     
-    func prepareViewControllerSetup() {
+    open func prepareViewControllerSetup() {
         
         view.backgroundColor = .white
     }
