@@ -4,7 +4,7 @@ import UIKit
 
 //MARK: - BaseView
 
-public class BaseView: UIView {
+open class BaseView: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,7 +25,7 @@ public class BaseView: UIView {
 
 //MARK: - GenericBaseView
 
-public class GenericBaseView<T>: BaseView {
+open class GenericBaseView<T>: BaseView {
     
     private var data: T?
     
@@ -60,7 +60,7 @@ public class GenericBaseView<T>: BaseView {
 
 //MARK: - BaseViewController
 
-class BaseViewController<V>: UIViewController {
+open class BaseViewController<V>: UIViewController {
     
     var viewModel: V!
     
