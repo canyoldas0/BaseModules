@@ -12,6 +12,7 @@ let package = Package(
             targets: ["BaseModules"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/canyoldas0/DefaultNetworkOperationPackage", .upToNextMajor(from: "1.2.0"))
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
