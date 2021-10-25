@@ -13,9 +13,9 @@ import UIKit
 
 open class BaseViewController<V>: UIViewController {
     
-    public var viewModel: V!
+    var viewModel: V!
     
-    convenience init(viewModel: V) {
+    public convenience init(viewModel: V) {
         self.init()
         self.viewModel = viewModel
     }
