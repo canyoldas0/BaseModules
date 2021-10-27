@@ -13,7 +13,7 @@ import UIKit
 
 open class BaseViewController<V>: UIViewController {
     
-    var viewModel: V!
+    public var viewModel: V!
     
     public convenience init(viewModel: V) {
         self.init()
