@@ -18,8 +18,8 @@ open class BaseView: UIView {
         setupViews()
     }
     
-    func addMajorFields() {}
-    func setupViews() {}
+    open func addMajorFields() {}
+    open func setupViews() {}
     
 }
 

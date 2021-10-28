@@ -29,16 +29,16 @@ open class GenericBaseView<T>: BaseView {
         super.init(coder: coder)
     }
     
-    func loadDataToView() {
+    open func loadDataToView() {
         
     }
     
-    func setData(data: T?) {
+    open func setData(data: T?) {
         self.data = data
         loadDataToView()
     }
     
-    func returnData() -> T? {
+    open func returnData() -> T? {
         return data
     }
     
